@@ -1,0 +1,229 @@
+* {
+    text-align: center;
+    text-decoration-line: none;
+}
+
+body {
+    margin: 0;
+    font-family: 'Nanum Gothic', sans-serif;
+    line-height: 1.8;
+    font-weight: 500;
+}
+
+/* div {
+    display: block;
+} */
+
+#yb_page {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+/* 웹 왼쪽 로고 및 GNB 관련 CSS */
+
+.container {
+    padding-bottom: 40px;
+    padding-left: 3em;
+    padding-right: 3em;
+    width: 20%;
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    overflow-y: scroll;
+    z-index: 1001;
+    background: rgba(0, 0, 0, 0.04);
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.logo {
+    line-height: 1.0;
+    margin-bottom: 50px;
+}
+
+.logo > h1 > a > span {
+    font-size: 20px;
+    text-align: center;
+    color: black;
+}
+
+.logo > h1 > a > img {
+    width: 100px;
+    height: 100px;
+
+    border-radius: 100px;
+
+    box-shadow: 0px 0px 10px 0px black;
+    margin: 10px;
+
+    background-size: cover;
+    background-position: center;
+    
+    align-content: center;
+}
+
+#yb_page_menu > ul {
+    padding-inline-start: 0;
+}
+
+#yb_page_menu > ul > li {
+    font-family: "Montserrat", Arial, sans-serif;
+    margin: 0 0 15px 0;
+    padding: 0;
+    list-style: none;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+#yb_page_menu > ul > li > a {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+#yb_page_menu > ul > li > a:hover {
+    text-decoration-line: underline;
+    color: black;
+}
+
+#yb_page_menu > ul > li.menu_active > a {
+    color: black;
+    text-decoration-line: underline;
+}
+
+.yb_page_footer {
+    position: absolute;
+    bottom: 40px;
+    right: 1.5em;
+    left: 1.5em;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.6);
+    padding: 0 20px;
+}
+
+.yb_page_footer > p > a {
+    color: #f05d23;
+}
+
+.yb_page_footer > ul {
+    padding-inline-start: 0;
+    margin: 0;
+}
+
+.yb_page_footer > ul > li {
+   padding: 0;
+   margin: 0;
+   display: inline;
+   list-style: none;
+}
+
+.yb_page_footer > ul > li > a > .fa {
+    padding: 5px;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    border: 2px rgba(0, 0, 0, 0.7) solid;
+  }
+
+.fa:hover {
+    opacity: 0.7;
+  }
+  
+.fa-facebook {
+    background: rgba(0, 0, 0, 0.04);
+    color: rgba(0, 0, 0, 0.7);
+  }
+  
+.fa-linkedin {
+    background: rgba(0, 0, 0, 0.04);
+    color: rgba(0, 0, 0, 0.7);
+  }
+
+
+/* 웹 오른쪽 콘텐츠 관련 CSS */
+
+.body_content {
+    width: 73%;
+    float: right;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+@media (max-width: 992px){
+    .body_content {
+        display: flex;
+        width: 60%;
+    }
+}
+
+
+
+
+/* #grid {
+    display:grid;
+    grid-template-columns: 150px 1fr;
+} */
+
+/* #body_title {
+     text-align: center;
+     font-size: 25px;
+     border-bottom: 1px solid gray;
+     padding: 20px;
+     margin: 0;
+}
+
+#GNB_menu {
+    font-size: 20px;
+    border-right: 1px solid gray;
+    padding-left: 0px;
+    margin: 0;
+}
+
+#body_content {
+    margin:0;
+    padding-left: 30px;
+    
+}
+
+@media(max-width:800px){
+    #grid {
+        display:block;
+        grid-template-columns: 150px 1fr;
+    }
+    #GNB_menu {
+        border-right:none;
+    } 
+}
+
+#footer {
+    text-align: right;
+    border-top: 1px solid gray;
+    padding-right: 15px;
+    padding-top: 15px;
+}
+
+.ybpng {
+    
+    width: 100px;
+    height: 100px;
+
+    border-radius: 100px;
+    border: 3px solid rgb(56, 56, 56);
+
+    box-shadow: 0px 0px 10px 0px black;
+    margin: 10px;
+
+    background-size: cover;
+    background-position: center;
+    
+    align-content: center;
+    
+} */
