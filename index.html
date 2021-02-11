@@ -1,35 +1,87 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main | 영배쓰 코딩서터디</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="yb_cartoon.png">
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-189097703-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-189097703-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'UA-189097703-1');
-</script>
+        gtag('config', 'UA-189097703-1');
+    </script>
+    <!-- GA 스크립트 나중에 GTM으로 변경해보자-->
+
+    <!-- 버튼 하나로 다크모드/일반모드 구현-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="colors.js"></script>
+    <!-- 버튼 하나로 다크모드/일반모드 구현-->
+
 </head>
+
 <body>
-    <h1><a href="index.html">영배쓰 코딩서터디</a></h1>
-    <ol>
-        <li><a href="1.html">HTML</a></li>
-        <li><a href="2.html">CSS</a></li>
-        <li><a href="3.html">JavaScript</a></li>
-    </ol>
-    
-    <h2>환영합니다</h2>
+    <div id="yb_page">
+        <aside class="container">
+            <div class="logo">
+                <h1><a href="index.html">
+                        <img src="yb_cartoon.png" alt="영배쓰 코딩서터디 로고"><br /><span>영배쓰 코딩서터디</span></a>
+                </h1>
+            </div>
+            <nav id="yb_page_menu" role="navigation">
+                <ul>
+					<li class="menu_active"><a href="index.html">Home</a></li>
+					<li><a href="aboutme.html">About Me</a></li>
+					<li><a href="project.html">Project</a></li>
+					<li><a href="skills.html">Skills</a></li>
+					<li><a href="interests.html">Interests</a></li>
+					<li><a href="contactme.html">Contact Me</a></li>
+				</ul>
+            </nav>
+            <div class="yb_page_footer">
+                <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+                    All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> 
+                    by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                <ul>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </aside>
+        <div class="body_content">
+            <div>
+            <h2>환영합니다</h2>
 
-    <img src="coding1.jpg" width= 50%>
+            <img src="coding1.jpg" width=50%>
 
-    <p>메인페이지입니다. 내용은 계속해서 업데이트될 예정입니다!! 
-    </p>
-    
+            <p>메인페이지입니다. 내용은 계속해서 업데이트될 예정입니다!!
+            </p>
+            </div>
+            <div id="footer">
+            <!-- 버튼 하나로 다크모드/일반모드 구현-->
+            <input id="night_day" type="button" value="다크모드" onclick="
+                nightDayHandler(this);
+            ">
+            <!-- 버튼 하나로 다크모드/일반모드 구현-->
+            </div>
+        </div>
+    </div>
+
 
 </body>
+
 </html>
